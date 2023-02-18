@@ -1,10 +1,6 @@
+from flask import render_template
 from app import app
 
-@app.route('/eng')
-def indexPT():
-    return "HELLO WORLD"
-
-
-@app.route('/por')
+@app.route('/index')
 def index():
-    return "Olá mundo"
+    return render_template('index.html')
